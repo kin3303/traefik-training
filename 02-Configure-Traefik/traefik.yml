@@ -12,8 +12,8 @@ api:
 providers:
   docker: 
     watch: true
-    exposedByDefault: false
-    swarmMode: true
+    exposedByDefault: true
+    swarmMode: false
 ################################################################
 # Traefik Logging
 ################################################################
