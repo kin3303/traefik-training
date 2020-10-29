@@ -24,9 +24,8 @@ services:
      # We set a label to tell Traefik to assign a hostname to the new service
      labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.catapp.rule=PathPrefix(`/test`)"
+      - "traefik.http.routers.catapp.rule=Host(`catapp.localhost`)"
       - "traefik.http.routers.catapp.entrypoints=web"
       - "traefik.http.services.catapp.loadbalancer.server.port=5000"
       - "traefik.http.routers.catapp.rule=Host(`catapp.localhost`)"
-      #- "traefik.http.routers.catapp.rule=Host(`catapp.localhost`)"
       
