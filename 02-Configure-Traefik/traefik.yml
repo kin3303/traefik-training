@@ -13,7 +13,7 @@ providers:
   docker: 
     watch: true
     exposedByDefault: false
-    swarmMode: false
+    swarmMode: true
 ################################################################
 # Traefik Logging
 ################################################################
